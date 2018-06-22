@@ -1,4 +1,4 @@
-(defproject netease-im-clj "0.1.0"
+(defproject vinurs/netease-im-clj "0.1.0"
   :description "网易云IM API封装"
   :url "https://github.com/vinurs/netease-im-clj"
   :license {:name "Eclipse Public License"
