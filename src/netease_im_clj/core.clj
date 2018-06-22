@@ -34,7 +34,7 @@
   (digest/md5 requestBody))
 
 
-(defn- netease-post
+(defn netease-post
   "网易云的POST通用接口"
   [{:keys [post-url form-params]}]
   (let [timestamp (str (int (/ (.getTime (java.util.Date.)) 1000)))
