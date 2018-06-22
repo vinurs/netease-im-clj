@@ -1,5 +1,6 @@
 (ns netease-im-clj.core
   (:require [clojure.math.numeric-tower :as math]
+            [digest]
             [clj-http.client :as client]
             [clojure.data.json :as json]))
 
@@ -18,9 +19,10 @@
 
 (defn netease-im-setconfig!
   "设置网易云的appkey以及secretkey"
-  [{:keys {app-key secret-key}}]
+  [{:keys [app-key secret-key]}]
   (do (def netease-im-app-key app-key)
       (def netease-im-secret-key secret-key)))
+
 
 (defn- getCheckSum
   "计算并获取CheckSum"
